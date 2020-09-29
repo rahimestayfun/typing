@@ -1,0 +1,170 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  padding: 0 100px;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  background-color: white;
+  transition: background-color 0.5s linear;
+}
+
+.quote-container {
+  font-size: 30px;
+  width: 80vw;
+  height: 200px;
+  color: rgb(37, 33, 33);
+  margin-top: 50px;
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.31);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.31);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  box-sizing: border-box;
+  color: rgb(83, 83, 83);
+}
+.quote {
+  text-align: center;
+}
+#startButton {
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+.keys {
+  max-width: 100vw;
+  background-color: rgba(190, 188, 188, 0.333);
+  border: 1px solid rgba(167, 165, 165, 0.863);
+  border-radius: 5px;
+}
+
+.first-row,
+.second-row,
+.third-row,
+.fourth-row,
+.fifth-row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.key {
+  min-width: 50px;
+  font-size: 20px;
+  padding: 0.8rem 0.5rem;
+  margin: 5px;
+  transform: all 0.09s ease;
+  border: 1px solid rgba(128, 128, 128, 0.822);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.959);
+  color: rgb(83, 83, 83);
+}
+
+.fifth-row > .key {
+  width: 50%;
+}
+.playing {
+  transform: scale(1.2);
+  background: rgba(15, 15, 15, 0.137);
+  box-shadow: 0px 0px 5px 0px rgba(2, 2, 2, 0.335);
+  transition: all 0.8 ease;
+}
+
+.matching {
+  color: rgb(83, 83, 83);
+  background: rgba(3, 191, 248, 0.137);
+}
+.unmatching {
+  background: rgba(248, 3, 3, 0.109);
+  color: rgb(83, 83, 83);
+
+  text-decoration: underline;
+}
+.correction {
+  position: absolute;
+  font-size: 30px;
+  color: rgb(109, 241, 48);
+  transform: scale(1.2);
+  transition: all cubic-bezier(0.68, -0.55, 0.265, 1.55) ease;
+}
+
+span.out {
+  opacity: 0.1;
+}
+
+#startButton {
+  color: rgb(83, 83, 83);
+  border: none;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+  outline: none;
+}
+
+/* Toggle Bar */
+.toggle-bar {
+  width: 58px;
+  height: 30px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+.toggle-bar input {
+  display: none;
+}
+
+.toggle {
+  background-color: rgb(170, 170, 175);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.4s;
+}
+.toggle:before {
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  left: 3px;
+  bottom: 3px;
+  content: "";
+  background-color: white;
+  transition: 0.4s;
+}
+input:checked + .toggle {
+  background-color: rgba(255, 255, 255, 0.959);
+}
+
+input:checked + .toggle:before {
+  transform: translateX(27px);
+  background-color: rgb(170, 170, 175);
+}
+.toggle.round:before {
+  border-radius: 50%;
+}
+.toggle.round {
+  border-radius: 34px;
+}
+.dark {
+  background-color: black;
+  transition: background-color 0.5s linear;
+}
+.dark-mode {
+  background-color: rgba(255, 255, 255, 0.959);
+}

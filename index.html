@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Practice</title>
+    <link rel="shortcut icon" href="#" />
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <label class="toggle-bar">
+      <input type="checkbox" />
+      <span class="toggle round"></span>
+    </label>
+    <!-- Random quotes -->
+    <div class="quote-container">
+      <div class="quote"></div>
+    </div>
+    <button id="startButton">Start</button>
+    <div class="keys">
+      <!-- first -->
+      <div class="first-row">
+        <div data-key="49" class="key">
+          <kbd>1</kbd>
+        </div>
+        <div data-key="50" class="key">
+          <kbd>2</kbd>
+        </div>
+        <div data-key="51" class="key">
+          <kbd>3</kbd>
+        </div>
+        <div data-key="52" class="key">
+          <kbd>4</kbd>
+        </div>
+        <div data-key="53" class="key">
+          <kbd>5</kbd>
+        </div>
+        <div data-key="54" class="key">
+          <kbd>6</kbd>
+        </div>
+        <div data-key="55" class="key">
+          <kbd>7</kbd>
+        </div>
+        <div data-key="56" class="key">
+          <kbd>8</kbd>
+        </div>
+        <div data-key="57" class="key">
+          <kbd>9</kbd>
+        </div>
+        <div data-key="48" class="key">
+          <kbd>0</kbd>
+        </div>
+        <div data-key="189" class="key">
+          <kbd>-</kbd>
+        </div>
+        <div data-key="187" class="key">
+          <kbd>=</kbd>
+        </div>
+        <div data-key="8" class="key">
+          <kbd>Backspace</kbd>
+        </div>
+      </div>
+
+      <!-- second -->
+      <div class="second-row">
+        <div data-key="81" class="key">
+          <kbd>Q</kbd>
+        </div>
+        <div data-key="87" class="key">
+          <kbd>W</kbd>
+        </div>
+        <div data-key="69" class="key">
+          <kbd>E</kbd>
+        </div>
+        <div data-key="82" class="key">
+          <kbd>R</kbd>
+        </div>
+        <div data-key="84" class="key">
+          <kbd>T</kbd>
+        </div>
+        <div data-key="89" class="key">
+          <kbd>Y</kbd>
+        </div>
+        <div data-key="85" class="key">
+          <kbd>U</kbd>
+        </div>
+        <div data-key="73" class="key">
+          <kbd>I</kbd>
+        </div>
+        <div data-key="79" class="key">
+          <kbd>O</kbd>
+        </div>
+        <div data-key="80" class="key">
+          <kbd>P</kbd>
+        </div>
+        <div data-key="219" class="key">
+          <kbd>[</kbd>
+        </div>
+        <div data-key="221" class="key">
+          <kbd>]</kbd>
+        </div>
+        <div data-key="220" class="key">
+          <kbd>\</kbd>
+        </div>
+      </div>
+      <!-- third -->
+      <div class="third-row">
+        <!-- <div>
+          <kbd data-key="20" class="key">CapsLock</kbd>
+        </div> -->
+        <div data-key="65" class="key">
+          <kbd>A</kbd>
+        </div>
+        <div data-key="83" class="key">
+          <kbd>S</kbd>
+        </div>
+        <div data-key="68" class="key">
+          <kbd>D</kbd>
+        </div>
+        <div data-key="70" class="key">
+          <kbd>F</kbd>
+        </div>
+        <div data-key="71" class="key">
+          <kbd>G</kbd>
+        </div>
+        <div data-key="72" class="key">
+          <kbd>H</kbd>
+        </div>
+        <div data-key="74" class="key">
+          <kbd>J</kbd>
+        </div>
+        <div data-key="75" class="key">
+          <kbd>K</kbd>
+        </div>
+        <div data-key="76" class="key">
+          <kbd>L</kbd>
+        </div>
+        <div data-key="186" class="key">
+          <kbd>;</kbd>
+        </div>
+        <div data-key="222" class="key">
+          <kbd>'</kbd>
+        </div>
+        <div data-key="13" class="key">
+          <kbd>Enter</kbd>
+        </div>
+      </div>
+      <!-- fourth -->
+      <div class="fourth-row">
+        <div data-key="90" class="key">
+          <kbd>Z</kbd>
+        </div>
+        <div data-key="88" class="key">
+          <kbd>X</kbd>
+        </div>
+        <div data-key="67" class="key">
+          <kbd>C</kbd>
+        </div>
+        <div data-key="86" class="key">
+          <kbd>V</kbd>
+        </div>
+        <div data-key="66" class="key">
+          <kbd>B</kbd>
+        </div>
+        <div data-key="78" class="key">
+          <kbd>N</kbd>
+        </div>
+        <div data-key="77" class="key">
+          <kbd>M</kbd>
+        </div>
+        <div data-key="188" class="key">
+          <kbd>,</kbd>
+        </div>
+        <div data-key="190" class="key">
+          <kbd>.</kbd>
+        </div>
+        <div data-key="191" class="key">
+          <kbd>/</kbd>
+        </div>
+        <!-- <div data-key="16" class="key">
+          <kbd>Shift</kbd>
+        </div> -->
+      </div>
+      <!-- fifth -->
+      <div class="fifth-row">
+        <div data-key="32" class="key">
+          <kbd>Space</kbd>
+        </div>
+      </div>
+    </div>
+    <!-- audios -->
+    <audio data-key="49" src="sounds/tink.wav"></audio>
+    <audio data-key="50" src="sounds/tink.wav"></audio>
+    <audio data-key="51" src="sounds/tink.wav"></audio>
+    <audio data-key="52" src="sounds/tink.wav"></audio>
+    <audio data-key="53" src="sounds/tink.wav"></audio>
+    <audio data-key="54" src="sounds/tink.wav"></audio>
+    <audio data-key="55" src="sounds/tink.wav"></audio>
+    <audio data-key="56" src="sounds/tink.wav"></audio>
+    <audio data-key="57" src="sounds/tink.wav"></audio>
+    <audio data-key="48" src="sounds/tink.wav"></audio>
+    <audio data-key="189" src="sounds/tink.wav"></audio>
+    <audio data-key="187" src="sounds/tink.wav"></audio>
+    <audio data-key="8" src="sounds/boom.wav"></audio>
+    <!--  -->
+    <audio data-key="81" src="sounds/tink.wav"></audio>
+    <audio data-key="87" src="sounds/tink.wav"></audio>
+    <audio data-key="69" src="sounds/tink.wav"></audio>
+    <audio data-key="82" src="sounds/tink.wav"></audio>
+    <audio data-key="84" src="sounds/tink.wav"></audio>
+    <audio data-key="89" src="sounds/tink.wav"></audio>
+    <audio data-key="85" src="sounds/tink.wav"></audio>
+    <audio data-key="73" src="sounds/tink.wav"></audio>
+    <audio data-key="79" src="sounds/tink.wav"></audio>
+    <audio data-key="80" src="sounds/tink.wav"></audio>
+    <audio data-key="219" src="sounds/tink.wav"></audio>
+    <audio data-key="221" src="sounds/tink.wav"></audio>
+    <audio data-key="220" src="sounds/tink.wav"></audio>
+    <!--  -->
+    <!-- <audio data-key="20" src="sounds/boom.wav"></audio> -->
+    <audio data-key="65" src="sounds/tink.wav"></audio>
+    <audio data-key="83" src="sounds/tink.wav"></audio>
+    <audio data-key="68" src="sounds/tink.wav"></audio>
+    <audio data-key="70" src="sounds/tink.wav"></audio>
+    <audio data-key="71" src="sounds/tink.wav"></audio>
+    <audio data-key="72" src="sounds/tink.wav"></audio>
+    <audio data-key="74" src="sounds/tink.wav"></audio>
+    <audio data-key="75" src="sounds/tink.wav"></audio>
+    <audio data-key="76" src="sounds/tink.wav"></audio>
+    <audio data-key="186" src="sounds/tink.wav"></audio>
+    <audio data-key="222" src="sounds/tink.wav"></audio>
+    <audio data-key="13" src="sounds/boom.wav"></audio>
+    <!--  -->
+    <audio data-key="90" src="sounds/tink.wav"></audio>
+    <audio data-key="88" src="sounds/tink.wav"></audio>
+    <audio data-key="67" src="sounds/tink.wav"></audio>
+    <audio data-key="86" src="sounds/tink.wav"></audio>
+    <audio data-key="66" src="sounds/tink.wav"></audio>
+    <audio data-key="78" src="sounds/tink.wav"></audio>
+    <audio data-key="77" src="sounds/tink.wav"></audio>
+    <audio data-key="188" src="sounds/tink.wav"></audio>
+    <audio data-key="190" src="sounds/tink.wav"></audio>
+    <audio data-key="191" src="sounds/tink.wav"></audio>
+    <!-- <audio data-key="16" src="sounds/tink.wav"></audio> -->
+    <!--  -->
+    <audio data-key="32" src="sounds/boom.wav"></audio>
+
+    <audio class="music" src="sounds/music.mp3"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
